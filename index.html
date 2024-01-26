@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Merriweather&family=Open+Sans&family=Titillium+Web&display=swap');
+    </style>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="header">
+        <img src="assets/logo.png" alt="Logo" id="logo">
+        <div id="container">
+            <textarea id="text-input" placeholder="Digite seu texto"></textarea>
+            <textarea id="text-output" placeholder="Resultado da Criptografia/Descriptografia" readonly></textarea>
+            <p id="aviso"><span class="exclamacao">&#9888;</span> Apenas letras minúsculas e sem acento.</p>
+            <div id="botoes-container">
+                <div class="botao-container">
+                    <button class="rounded-button" onclick="criptografar()">Criptografar</button>
+                </div>
+                <div class="botao-container">
+                    <button class="rounded-button" id="descrip" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+            <button id="copy-botao" class="copy-botao" onclick="copiarMensagem()">Copiar Mensagem</button>
+        </div>
+
+        <div id="right-image-container">
+            <img src="assets/found.png" alt="Imagem à Direita" id="right-image">
+            <p id="image-caption">Nenhuma mensagem <br> encontrada</p>
+            <h1 id="imagem-caption-2">Digite um texto que você deseja criptografar ou descriptografar.</h1>
+        </div>
+    </div>
+</body>
+
+</html>
